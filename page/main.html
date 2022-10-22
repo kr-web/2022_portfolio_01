@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>일자리매칭 플랫폼</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div class="top">
+      <header id="header" class="flex-between">
+        <h1><a href="/">logo</a></h1>
+  
+        <div class="menu">
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#"><span>일자리</span> 찾기</a>
+              </li>
+              <li>
+                <a href="#"><span>전문가</span> 검색</a>
+              </li>
+              <li>
+                <a href="#"><span>정보/이벤트</span></a>
+              </li>
+            </ul>
+          </nav>
+          <nav id="unb">
+            <button type="button">menu</button>
+          </nav>
+        </div>
+      </header>
+
+      <div class="search-box">
+        <div class="search-bar">
+          <label for="search">검색</label>
+          <input id="search" type="text">
+          <small class="search-placeholder">어떤 <span>일자리/전문가</span>를 찾으세요?</small>
+        </div>
+        <button type="button" class="search-btn"><span>검색</span></button>
+      </div>
+
+      <div class="view-box">
+        <article style="width:1020px;">
+          <div class="view-box__left">
+            <div class="view-info">
+              <h2>
+                <p>지식/재산 서비스 아카데미</p>교육생 모집
+              </h2>
+              <a href="#">더보기</a>
+            </div>
+            <div class="img-bg"></div>
+          </div>
+          <ul class="view-box__right">
+            <li>
+              <div class="img-bg"></div>
+              <div class="view-info">
+                <h2>지식재산의 날</h2>
+                <p>매년 9월 4일은 지식재산권의
+                  중요성을 널리 알리고 지식재산이 
+                  존중되는 사회환경을 조성하기 
+                  위해 제정된 국가기념일</p>
+                <a href="#">더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img-bg"></div>
+              <div class="view-info">
+                <h2>특허 지식재산권</h2>
+                <p>담당자의 직무 이야기</p>
+                <a href="#">더보기</a>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <a href="#" class="join_go">join</a>
+    </div>
+    <!-- 일자리 둘러보기 -->
+    <section class="find-job">
+      <article>
+        <h2>일자리 둘러보기</h2>
+        <ul class="find-job__list">
+          <li><a href="#"><span>법률서비스</a></li>
+          <li><a href="#"><span>거래 &#183; 금융</a></li>
+          <li><a href="#"><span>정보조사/분석</a></li>
+          <li><a href="#"><span>기술 전문가</a></li>
+          <li><a href="#"><span>SW 관리</a></li>
+          <li><a href="#"><span>미디어 &#183; 콘텐츠</a></li>
+          <li><a href="#"><span>기업 &#183; 기관</a></li>
+          <li><a href="#"><span>협회 &#183; 단체</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 추천 일자리 -->
+    <section class="featured-job">
+      <article>
+        <div class="fj-header flex-between">
+          <h2>추천 일자리</h2>
+
+          <div class="fj-slide-nav slide-btn">
+            <button type="button" class="fj-slide-prev prev">prev</button>
+            <button type="button" class="fj-slide-next next">next</button>
+          </div>
+        </div>
+
+        <div class="fj-slide">
+          <ul class="fj-slide-list">
+            <li class="fj-slide-list__li">
+              <a href="#">
+                <h3>경은 국제특허 법률 사무소</h3>
+                <img src="../img/view_3/push_1.png" class="fj-slide-img">
+                <ul class="fj-slide-info">
+                  <li class="fj-slide-info__imp">특허사무소</li>
+                  <li>사무관리</li>
+                  <li>사무행정</li>
+                  <li>특허업무</li>
+                </ul>
+                <h4>지식재산팀 특허업무 신입/경력 모집</h4>
+                <p>신입 &#183; 경력3년&uarr; 대졸&uarr; 정규직 외 경기화성시</p>
+                <p>~10/20 마감</p>
+              </a>
+            </li>
+            <li class="fj-slide-list__li">
+              <a href="#">
+                <h3>한국 소프트웨어 저작권 협회</h3>
+                <img src="../img/view_3/push_2.png" class="fj-slide-img">
+                <ul class="fj-slide-info">
+                  <li class="fj-slide-info__imp">특허사무소</li>
+                  <li>사무관리</li>
+                  <li>사무행정</li>
+                  <li>특허업무</li>
+                </ul>
+                <h4>지식재산팀 특허 및 디자인권 선행기술 조사 및 분석자 모집</h4>
+                <p>신입 &#183; 경력3년&uarr; 대졸&uarr; 정규직 외 경기화성시</p>
+                <p>~10/20 마감</p>
+              </a>
+            </li>
+            <li class="fj-slide-list__li">
+              <a href="#">
+                <h3>뮤직카우</h3>
+                <img src="../img/view_3/push_3.png" class="fj-slide-img">
+                <ul class="fj-slide-info">
+                  <li class="fj-slide-info__imp">특허사무소</li>
+                  <li>사무관리</li>
+                  <li>사무행정</li>
+                  <li>특허업무</li>
+                </ul>
+                <h4>지식재산팀 특허 및 디자인권 선행기술 조사 및 분석자 모집</h4>
+                <p>신입 &#183; 경력3년&uarr; 대졸&uarr; 정규직 외 경기화성시</p>
+                <p>~10/20 마감</p>
+              </a>
+            </li>
+            <li class="fj-slide-list__li">
+              <a href="#">
+                <h3>경은 국제특허 법률 사무소</h3>
+                <img src="../img/view_3/push_1.png" class="fj-slide-img">
+                <ul class="fj-slide-info">
+                  <li class="fj-slide-info__imp">특허사무소</li>
+                  <li>사무관리</li>
+                  <li>사무행정</li>
+                  <li>특허업무</li>
+                </ul>
+                <h4>지식재산팀 특허업무 신입/경력 모집</h4>
+                <p>신입 &#183; 경력3년&uarr; 대졸&uarr; 정규직 외 경기화성시</p>
+                <p>~10/20 마감</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- 교육 멘토링 -->
+    <section class="edu-mentoring">
+      <article>
+        <h2>교육/멘토링</h2>
+        <ul class="em-list flex-between">
+          <li><a href="#">취업</a></li>
+          <li><a href="#">창업</a></li>
+          <li><a href="#">일자리체험</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 지식재산전문가 -->
+    <section class="ip-expert">
+      <article>
+        <div class="ip-header flex-between">
+          <h2>지식재산전문가</h2>
+
+          <div class="ip-slide-nav slide-btn">
+            <button type="button" class="ip-slide-prev prev prev-1">prev</button>
+            <button type="button" class="ip-slide-next next next-1">next</button>
+          </div>
+        </div>
+
+        <div class="ip-body">
+          <ul class="ip-tabs tabs">
+            <li class="tab-link active" data-tab="tab-1">법률서비스</li>
+            <li class="tab-link" data-tab="tab-2">거래 &#183; 금융</li>
+            <li class="tab-link" data-tab="tab-3">정보조사/분석</li>
+            <li class="tab-link" data-tab="tab-4">기술 전문가</li>
+            <li class="tab-link" data-tab="tab-5">SW관리</li>
+            <li class="tab-link" data-tab="tab-6">미디어 &#183; 콘텐츠</li>
+            <li class="tab-link" data-tab="tab-7">기업 &#183; 기관</li>
+            <li class="tab-link" data-tab="tab-8">협회 &#183; 단체</li>
+          </ul>
+
+          <div class="tabs-content">
+            <ul id="tab-1" class="ip-slide-list active">
+              <li class="ip-slide-list__li li-1">
+                <a href="#">
+                  <div class="ip-header flex-between">
+                    <h3>SBS 부국장</h3>
+                    <span>김용철</span>
+                  </div>
+                  <div class="ip-body flex-between">
+                    <div class="ip-email">
+                      E-mail: <br /><span></span>
+                    </div>
+                    <img src="../img/view_5/ip_1.png" alt="">
+                  </div>
+                  <p class="ip-footer">
+                    SBS 부국장으로 재직중이며 현재 한국지식재산기자협회(KIPJA) 회장을 맡고 있다.
+                  </p>
+                </a>
+              </li>
+              <li class="ip-slide-list__li li-1">
+                <a href="#">
+                  <div class="ip-header flex-between">
+                    <h3>중앙일보 과학·미래 전문기자 겸 논설위원</h3>
+                    <span>최준호</span>
+                  </div>
+                  <div class="ip-body flex-between">
+                    <div class="ip-email">
+                      E-mail: <br /><span>joonjo@joongang.co.kr</span>
+                    </div>
+                    <img src="../img/view_5/ip_2.png" alt="">
+                  </div>
+                  <p class="ip-footer">
+                    중앙일보 과학·미래 전문기자 겸 논설위원
+                  </p>
+                </a>
+              </li>
+              <li class="ip-slide-list__li li-1">
+                <a href="#">
+                  <div class="ip-header flex-between">
+                    <h3>IP데일리 편집국장</h3>
+                    <span>주상돈</span>
+                  </div>
+                  <div class="ip-body flex-between">
+                    <div class="ip-email">
+                      E-mail: <br /><span>newsdjoo@gmail.com</span>
+                    </div>
+                    <img src="../img/view_5/ip_3.png" alt="">
+                  </div>
+                  <p class="ip-footer">
+                    지식재산 전문미디어 ‘IP타깃(Targets)’과 ‘IP데일리(DAILY)’를 운영중이다.
+                  </p>
+                </a>
+              </li>
+              <li class="ip-slide-list__li li-1">
+                <a href="#">
+                  <div class="ip-header flex-between">
+                    <h3>SBS 부국장</h3>
+                    <span>김용철</span>
+                  </div>
+                  <div class="ip-body flex-between">
+                    <div class="ip-email">
+                      E-mail: <br /><span></span>
+                    </div>
+                    <img src="../img/view_5/ip_1.png" alt="">
+                  </div>
+                  <p class="ip-footer">
+                    SBS 부국장으로 재직중이며 현재 한국지식재산기자협회(KIPJA) 회장을 맡고 있다.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <ul id="tab-2" class="ip-slide-list">
+              <li class="ip-slide-list__li">
+                <a href="#">
+                  <div class="ip-header flex-between">
+                    <h3>SBS 부국장</h3>
+                    <span>김용철</span>
+                  </div>
+                  <div class="ip-body flex-between">
+                    <div class="ip-email">
+                      E-mail: <br /><span></span>
+                    </div>
+                    <img src="../img/view_5/ip_1.png" alt="">
+                  </div>
+                  <p class="ip-footer">
+                    SBS 부국장으로 재직중이며 현재 한국지식재산기자협회(KIPJA) 회장을 맡고 있다.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 정보/이벤트 -->
+    <section class="info-event">
+      <article>
+        <div class="ie-header flex-between">
+          <h2>정보/이벤트</h2>
+          <a href="#" class="ie-link">더보기</a>
+        </div>
+
+        <ul class="ie-body flex-between">
+          <li>
+            <a href="#">
+              <img src="../img/view_6/event_1.png">
+              <p>주목받는 소프트웨어 자산 관리(C-SAM)... 윈도우7 기술지원 종료되면서 수요확대 </p>
+              <small>국내 유일 소프트웨어(SW) 자산관리 분야 자격증인 소프트웨어 자산관리사(C-SAM) 시험에 대한 수요가 크게 늘어날 전망이다.</small>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/view_6/event_2.png">
+              <p>지식재산기반 과학영재 교육(’IP-R&E’) 시범 운영... 발명진흥회- 창의재산 협약</p>
+              <small>올 하반기부터 과학고 영재학교를 대상으로 ‘지식재산(IP)기반 과학 영재 창의연구 
+                프로그램(IP-R&E)’ 시범 운영된다. 또 학생 누구...</small>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 일자리 찾기 -->
+    <section class="search-job">
+      <article>
+        <h2>일자리 찾기</h2>
+
+        <div class="sj-body">
+          <ul class="sj-tab tabs">
+            <li class="sj-link active" data-tab="sj-1">법률서비스</li>
+            <li class="sj-link" data-tab="sj-2">거래 &#183; 금융</li>
+            <li class="sj-link" data-tab="sj-3">정보조사/분석</li>
+            <li class="sj-link" data-tab="sj-4">기술 전문가</li>
+            <li class="sj-link" data-tab="sj-5">SW관리</li>
+            <li class="sj-link" data-tab="sj-6">미디어 &#183; 콘텐츠</li>
+          </ul>
+  
+          <div class="sj-list">
+            <div id="sj-1" class="sj-content active">
+              <ul class="content-list">
+                <li class="sj-con">
+                  <div class="sj-con__header flex-between">
+                    <ul class="sj-info">
+                      <li class="imp">지식재산권</li>
+                      <li class="imp">IP</li>
+                      <li class="imp">바이오</li>
+                      <li class="imp">의료기기</li>
+                      <li>의약</li>
+                      <li>제약</li>
+                      <li>지적재산권</li>
+                    </ul>
+
+                    <button type="button" class="sj-like">좋아요</button>
+                  </div>
+
+                  <div class="sj-con__body">
+                    <h3><a href="#"><strong>지식재산권(IP)</strong> 특허 및 디자인권 선행기술조사및 분석자 모집(9/28~)</a></h3>
+                    <p>지식재산권 저작권 권리 구제(2명) 저작권 관리업무 / 대졸이상 / 컴퓨터 활용 능력 우수자 / 문서작성우수자 / 전공: 법학 해당직무 인턴경력,<br /> 해당직무 근무경험 </p>
+                  </div>
+
+                  <div class="sj-con__footer">
+                    <span class="sj-company">법무법인 현장</span>
+                    <div class="sj-con-date">
+                      <span class="sj-person"><span>25명</span>이 찜했습니다.</span>
+                      <div class="sj-date">마감 20일 전</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sj-con">
+                  <div class="sj-con__header flex-between">
+                    <ul class="sj-info">
+                      <li class="imp">지식재산권</li>
+                      <li class="imp">IP</li>
+                      <li class="imp">바이오</li>
+                      <li class="imp">의료기기</li>
+                      <li>의약</li>
+                      <li>제약</li>
+                      <li>지적재산권</li>
+                    </ul>
+
+                    <button type="button" class="sj-like active">좋아요</button>
+                  </div>
+
+                  <div class="sj-con__body">
+                    <h3><a href="#"><strong>한국지식재산협회</strong> 사무행정/기획 채용</a></h3>
+                    <p>지식재산권 국제행사전담운영 / 기타 협회일반 행정업무 등 신입, 경력 대졸 계약직(정규직 전환 가능 계약직) 서울 강남구 ~07/01<br />해당직무 근무경험 </p>
+                  </div>
+
+                  <div class="sj-con__footer">
+                    <span class="sj-company">한국지식재산협회</span>
+                    <div class="sj-con-date">
+                      <span class="sj-person"><span>25명</span>이 찜했습니다.</span>
+                      <div class="sj-date">마감 20일 전</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sj-con">
+                  <div class="sj-con__header flex-between">
+                    <ul class="sj-info">
+                      <li class="imp">지식재산권</li>
+                      <li class="imp">IP</li>
+                      <li class="imp">바이오</li>
+                      <li class="imp">의료기기</li>
+                      <li>의약</li>
+                      <li>제약</li>
+                      <li>지적재산권</li>
+                    </ul>
+
+                    <button type="button" class="sj-like active">좋아요</button>
+                  </div>
+
+                  <div class="sj-con__body">
+                    <h3><a href="#"><strong>전략기획팀 채용</strong> 지식재산및 법무관련업무(~07/05)</a></h3>
+                    <p>지식재산권 관리업무(특허/상표) 전반 수행 및 관리/ 특허 프트폴리오 구척(출원/심사/등록/유지 관리 전반) 특허 조사/ 분석/ 국내외 특허분쟁<br /> 대용 관리 / 기타 기업 지재권 관리 업무  </p>
+                  </div>
+
+                  <div class="sj-con__footer">
+                    <span class="sj-company">프로텍바이오</span>
+                    <div class="sj-con-date">
+                      <span class="sj-person"><span>25명</span>이 찜했습니다.</span>
+                      <div class="sj-date">마감 20일 전</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="content-link">더보기</a>
+            </div>
+            <div id="sj-2" class="sj-content">
+              <ul class="content-list">
+                <li class="sj-con">
+                  <div class="sj-con__header flex-between">
+                    <ul class="sj-info">
+                      <li class="imp">지식재산권</li>
+                      <li class="imp">IP</li>
+                      <li class="imp">바이오</li>
+                      <li class="imp">의료기기</li>
+                      <li>의약</li>
+                      <li>제약</li>
+                      <li>지적재산권</li>
+                    </ul>
+
+                    <button type="button" class="sj-like">좋아요</button>
+                  </div>
+
+                  <div class="sj-con__body">
+                    <h3><a href="#"><strong>지식재산권(IP)</strong> 특허 및 디자인권 선행기술조사및 분석자 모집(9/28~)</a></h3>
+                    <p>지식재산권 저작권 권리 구제(2명) 저작권 관리업무 / 대졸이상 / 컴퓨터 활용 능력 우수자 / 문서작성우수자 / 전공: 법학 해당직무 인턴경력,<br /> 해당직무 근무경험 </p>
+                  </div>
+
+                  <div class="sj-con__footer">
+                    <span class="sj-company">법무법인 현장</span>
+                    <div class="sj-con-date">
+                      <span class="sj-person"><span>25명</span>이 찜했습니다.</span>
+                      <div class="sj-date">마감 20일 전</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="content-link">더보기</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 신입/경력 취업자 -->
+    <section class="new-career">
+      <article>
+        <div class="nc-header flex-between">
+          <h2>신입/경력 취업자</h2>
+
+          <div class="nc-slide-nav slide-btn">
+            <button type="button" class="nc-slide-prev prev">prev</button>
+            <button type="button" class="nc-slide-next next">next</button>
+          </div>
+        </div>
+
+        <div class="nc-slide">
+          <ul class="nc-slide-list">
+            <li class="nc-slide-list__li">
+              <a href="#" class="nc-con">
+                <div class="nc-con__header flex-between">
+                  <h3>특허업무</h3>
+                  <span class="nc-con-name">김**님</span>
+                </div>
+
+                <div class="nc-con__body flex-between">
+                  <img src="../img/view_8/person_1.png" class="nc-slide-img">
+                  <span>아름다운 기업을 위해 일하는 아름다운 사람이 되겠습니다. </span>
+                </div>
+
+                <div class="nc-con__footer">
+                  <p>글로벌 시장을 향한 도적과 열정이 가득한 인재를 찾으십니까?</p>
+                  <small>내 일처럼 꼼꼼하게 즐기면서 일할 수 있는 인재를 찾으십니까? 바로 여기 법학을 전공하고 특허업무경험이 있는 인재가있습니다.</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nc-slide-list__li">
+              <a href="#" class="nc-con">
+                <div class="nc-con__header flex-between">
+                  <h3>지식재산권/계약/상표권</h3>
+                  <span class="nc-con-name">박**님</span>
+                </div>
+
+                <div class="nc-con__body flex-between">
+                  <img src="../img/view_8/person_2.png" class="nc-slide-img">
+                  <span>항상 배우는 자세를 통해 끊임없이 성장하는 사람입니다.</span>
+                </div>
+
+                <div class="nc-con__footer">
+                  <p>제게 비전은 어떠한 방향의 일을 하느냐를 의미합니다.</p>
+                  <small>일의 경험과 가치를 높이 평가 받고 싶은 인재입니다. 남다른 책임감으로 하나 되어 성장해 나갈 회사를 찾습니다.</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nc-slide-list__li">
+              <a href="#" class="nc-con">
+                <div class="nc-con__header flex-between">
+                  <h3>특허전문</h3>
+                  <span class="nc-con-name">관**님</span>
+                </div>
+
+                <div class="nc-con__body flex-between">
+                  <img src="../img/view_8/person_3.png" class="nc-slide-img">
+                  <span>꼼꼼함과 성실함을 겸비함과 동시에 책임감을 갖고 이할 수 있는 인재입니다. </span>
+                </div>
+
+                <div class="nc-con__footer">
+                  <p>특허조사분석 경력 다수 경험자를 찾으십니까?</p>
+                  <small>방법에 대한 이해, 특허, 기업, 산업/시작 분석 유경험자이며, 제안/특허분석 결과 Presentation발표 경험 다수</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nc-slide-list__li">
+              <a href="#" class="nc-con">
+                <div class="nc-con__header flex-between">
+                  <h3>특허업무</h3>
+                  <span class="nc-con-name">박*현님</span>
+                </div>
+
+                <div class="nc-con__body flex-between">
+                  <img src="../img/view_8/person_1.png" class="nc-slide-img">
+                  <span>아름다운 기업을 위해 일하는 아름다운 사람이 되겠습니다. </span>
+                </div>
+
+                <div class="nc-con__footer">
+                  <p>글로벌 시장을 향한 도적과 열정이 가득한 인재를 찾으십니까?</p>
+                  <small>내 일처럼 꼼꼼하게 즐기면서 일할 수 있는 인재를 찾으십니까? 바로 여기 법학을 전공하고 특허업무경험이 있는 인재가있습니다.</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- 특허정보 -->
+    <section class="company-brand">
+      <article>
+        <ul>
+          <li><span>과학기술정보통신부</span></li>
+          <li><span>문화체육관광부</span></li>
+          <li><span>특허청</span></li>
+          <li><span>국가지식재산위원회</span></li>
+          <li><span>한국발명진흥회</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <footer id="footer">
+      <article>
+        <img src="../img/logo_trans_dark.png" class="footer-logo">
+        <ul class="company-info">
+          <li>법인명 : 사단법인 지식재산단체총연합회</li>
+          <li>대표자 : 정갑윤, 원혜영</li>
+          <li>법인등록번호 : 110121-0130965</li>
+          <li>사업자등록번호 ㅣ 247-82-00361</li>
+          <li>E-mail : koreafipro@gmail.com</li>
+          <li>사무국 : 서울특별시 강남구 선릉로 105길 3, 4층(역삼동, 솜씨빌딩)</li>
+        </ul>
+      </article>
+    </footer>
+  </div>
+
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+
+  <script src="../js/src/main.js"></script>
+</body>
+</html>

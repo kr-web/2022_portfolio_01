@@ -1,0 +1,982 @@
+// main.scss
+html {scroll-behavior: smooth;}
+
+@mixin bg-default {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+$red : #FC4040;
+$blue : #1E4BA9;
+$yellow : #F88801;
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+#wrap{
+  width:100%;
+  height:auto;
+
+  header, article{
+    width:1105px;
+    margin:auto;
+  }
+
+  // Header
+  .top{
+    width:100%;
+    height:1092px;
+    background-image: url('../img/background.png');
+    @include bg-default;
+    background-size: cover;
+
+    // header
+    #header{
+      background: transparent;
+      height:110px;
+  
+      h1{
+        width:272px;
+        height:110px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        text-indent : -9999px;
+        a{
+          width:173px;
+          height:80px;
+          margin:auto;
+          background-image: url('../img/header/logo.png');
+          @include bg-default;
+          background-size: 70%;
+        }
+      }
+  
+      .menu{
+        display:flex;
+        align-items: center;
+        height:80px;
+        #gnb{
+          width:440px;
+          ul{
+            display:flex;
+            li{
+              width:130px;
+              padding-top: 20px;
+              box-sizing: border-box;
+              a{
+                &:before{
+                  content:'';
+                  display:block;
+                  width:30px;
+                  height:27px;
+                  margin:auto;
+                  background-image: url('../img/header/gnb-1.png');
+                  @include bg-default;
+                }
+  
+                span{
+                  font-weight: 600;
+                  color:$red;
+                }
+              }
+  
+              &:nth-child(2){
+                a{
+                  &:before{
+                    background-image: url('../img/header/gnb-2.png');
+                  }
+                  span{
+                    color:$blue;
+                  }
+                }
+              }
+  
+              &:nth-child(3){
+                a{
+                  &:before{
+                    background-image: url('../img/header/gnb-3.png');
+                  }
+                  span{
+                    color:$yellow;
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        #unb{
+          width:100px;
+          display:flex;
+          justify-content: center;
+          button{
+            text-indent: -9999px;
+            width:23px;
+            height:15px;
+            background-image: url('../img/header/unb.png');
+            @include bg-default;
+          }
+        }
+      }
+    }
+
+    .search-box{
+      position:absolute;
+      left:0;
+      background-color: $red;
+      max-width:1500px;
+      width:90vw;
+      height:60px;
+      display:flex;
+      align-items: center;
+      justify-content: end;
+      .search-bar{
+        width:990px;
+        // /width:70vw;
+        height:50px;
+        background-color: #fff;
+        border-radius: 25px 0 0 25px;
+        padding:5px 0 0 40px;
+        box-sizing: border-box;
+        label{
+          display:none;
+        }
+        input{
+          display:none;
+          border:0;
+          outline:0;
+          height:40px;
+          width:900px;
+          font-size:20px;
+        }
+        small{
+          position: absolute;
+          // max-width:990px;
+          // width:75vw;
+          margin-top: 5px;
+          font-size:20px;
+          font-weight: 500;
+          cursor:text;
+          span{
+            color:$blue;
+          }
+        }
+      }
+
+      .search-btn{
+        width:50px;
+        height:50px;
+        background-image: url('../img/header/search_24dp.png');
+        @include bg-default;
+        background-size: 50%;
+        text-indent: -999px;
+        span{
+          display:none;
+        }
+      }
+    }
+
+    .view-box{
+      width:100%;
+      height:770px;
+      padding-top:160px;
+      box-sizing: border-box;
+
+      a{
+        border:2px solid #D6D6D6;
+        border-radius: 10px;
+        width:68px;
+        height:24px;
+        line-height: 24px;
+        font-size:14px;
+        color:#5E5C5C;
+      }
+
+      &__left{
+        float:left;
+        width:350px;
+        height:100%;
+        .view-info{
+          padding:0 10px;
+          box-sizing: border-box;
+          margin-bottom: 2rem;
+          h2{
+            margin-bottom: 2rem;
+            &:before{
+              position:relative;
+              left:-10px;
+              content:'';
+              display:block;
+              width:16px;
+              height:16px;
+              background-color: $red;
+              border-radius: 100%;
+              margin:10px 0;
+            }
+            font-size:20px;
+            font-weight: 400;
+            p{
+              font-weight: 500;
+              color:$red;
+            }
+          }
+        }
+        .img-bg{
+          width:340px;
+          height:350px;
+          overflow: hidden;
+          border-radius: 25px;
+          background-image: url('../img/view_1/view_1.png');
+        }
+      }
+
+      &__right{
+        float:right;
+        height:100%;
+        li{
+          width:100%;
+          display:flex;
+          .img-bg{
+            width:380px;
+            height:370px;
+            overflow: hidden;
+            border-radius: 25px;
+            background-image: url('../img/view_1/view_2.png');
+            @include bg-default;
+          }
+          .view-info{
+            width:280px;
+            padding:0 10px;
+            box-sizing: border-box;
+            margin-bottom: 2rem;
+            h2{
+              margin-bottom: 0.5rem;
+              font-weight: 500;
+              font-size:20px;
+              &:before{
+                position:relative;
+                left:-10px;
+                content:'';
+                display:block;
+                width:0;
+                height:0;
+                border-top: 16px solid $blue;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                // background-color: $blue;
+                margin:10px 0;
+              }
+            }
+            p{
+              font-size:18px;
+              letter-spacing: -0.5px;
+              word-break: keep-all;
+              margin-bottom: 2rem;
+            }
+          }
+
+          &:nth-child(2){
+            .img-bg{
+              margin-left: 0.5rem;
+              width:360px;
+              height:210px;
+              background-image: url('../img/view_1/view_3.png');
+            }
+
+            .view-info{
+              margin-left: 0.5rem;
+              h2{
+                &:before{
+                  width:16px;
+                  height:16px;
+                  border:none;
+                  background-color: $yellow;
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+
+    a.join_go{
+      width:1105px;
+      margin:auto;
+      background-image: url('../img/view_1/view_4.png');
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+    }
+
+  }
+
+  // section
+  section{
+    width:100%;
+    padding:60px 0;
+    box-sizing: border-box;
+    
+    h2{
+      font-size:32px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .slide-btn{
+      button{
+        float:left;
+        width:35px;
+        height:35px;
+        text-indent: -9999px;
+        background-image: url('../img/common/prev.png');
+        @include bg-default;
+        &.next{
+          margin-left: 0.5rem;
+          margin-right: 1rem;
+          background-image: url('../img/common/next.png');
+        }
+      }
+    }
+
+    .tabs{
+      display:flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      max-width:840px;
+      height:102px;
+      margin-bottom: 1rem;
+      li{
+        float:left;
+        width:130px;
+        height:46px;
+        border-radius: 0 23px 23px 23px;
+        font-weight: 600;
+        border:2px solid #BFC1C1;
+        box-sizing: border-box;
+        margin-right: 0.5rem;
+        text-align: center;
+        line-height: 42px;
+        cursor: pointer;
+
+        &.active{
+          border:2px solid #000;
+          background-color: #FA7577;
+          color:#fff;
+        }
+      }
+    }
+
+    // 일자리 둘러보기
+    &.find-job {
+      height:330px;
+      padding:55px 0;
+      background-color: #F5F7F9;
+
+      .find-job__list{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        li{
+          min-width:90px;
+          a{
+            &:before{
+              content:'';
+              display:block;
+              width:90px;
+              height:90px;
+              margin-bottom: 0.5rem;
+              border:1px solid #7E7E7E;
+              background-color: #fff;
+              border-radius: 100%;
+              background-image: url('../img/view_2/gavel_black_24dp.png');
+              @include bg-default;
+              background-size: 40%;
+            }
+          }
+          &:nth-child(2){
+            a:before{
+              background-image: url('../img/view_2/paid_black_24dp.png');
+            }
+          }
+          &:nth-child(3){
+            a:before{
+              background-image: url('../img/view_2/troubleshoot_black_24dp.png');
+            }
+          }
+          &:nth-child(4){
+            a:before{
+              background-image: url('../img/view_2/badge_black_24dp.png');
+            }
+          }
+          &:nth-child(5){
+            a:before{
+              background-image: url('../img/view_2/manage_accounts_black_24dp.png');
+            }
+          }
+          &:nth-child(6){
+            a:before{
+              background-image: url('../img/view_2/subscriptions_black_24dp.png');
+            }
+          }
+          &:nth-child(7){
+            a:before{
+              background-image: url('../img/view_2/business_black_24dp.png');
+            }
+          }
+          &:nth-child(8){
+            a:before{
+              background-image: url('../img/view_2/diversity_2_black_24dp.png');
+            }
+          }
+        }
+      }
+    }
+
+    // 추천 일자리
+    &.featured-job{
+      height:600px;
+      background-color: #6B6A6B;
+
+      .fj-header{
+        h2{
+          color:#fff;
+        }
+      }
+  
+      .fj-slide{
+        position:relative;
+        width:100%;
+        height:400px;
+        overflow:hidden;
+        .fj-slide-list{
+          position: absolute;
+          top:0;
+          left:0;
+          width:2000px;
+          transition: left 0.5s ease-in-out ;
+
+          &__li{
+            float:left;
+            width:350px;
+            height:400px;
+            margin-right: 25px;
+            background-color: #4B4949;
+            border-radius: 10px;
+            color:#fff;
+            padding:35px 25px;
+            box-sizing: border-box;
+            h3, h4{
+              font-weight: 400;
+              text-align: left;
+              margin-bottom: 0.5rem;
+            }
+
+            p{
+              text-align: left;
+              font-size:14px;
+            }
+
+            .fj-slide-info{
+              width:100%;
+              height:22px;
+              margin:10px 0 15px 0;
+              font-size:12px;
+              li{
+                float:left;
+                padding:2px 5px;
+                box-sizing: border-box;
+                margin-right: 0.5rem;
+                height:22px;
+                background-color: #565656;
+                color:#fff;
+                border-radius: 4px;
+                &.fj-slide-info__imp{
+                  color:#FC67A9;
+                  padding-top: 1px;
+                  background: transparent;
+                  border:1px solid #FC67A9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 교육 멘토링
+    &.edu-mentoring{
+      height:480px;
+      background-color: #F5F5F5;
+      .em-list{
+        li{
+          width:350px;
+          height:280px;
+          text-indent: -9999px;
+          border-radius: 50px 0 50px 0;
+          background-image: url('../img/view_4/edu_1.png');
+          background-color: #C5E4F5;
+          @include bg-default;
+          background-position: 0 100%;
+          background-size: 95%;
+          &:nth-child(2){
+            background-color: #E7E7E7;
+            background-image: url('../img/view_4/edu_2.png');
+          }
+          &:nth-child(3){
+            background-color: #C3EEE0;
+            background-image: url('../img/view_4/edu_3.png');
+          }
+        }
+      }
+    }
+
+    // 지식재산전문가
+    &.ip-expert{
+      height:680px;
+      padding:65px 0;
+      .ip-header{
+        
+        .ip-slide-nav{
+          .prev{
+            background-image: url('../img/common/prev_black.png');
+          }
+          .next{
+            background-image: url('../img/common/next_black.png');
+          }
+        }
+      }
+
+      .ip-body{
+        .tabs-content{
+          position:relative;
+          width:100%;
+          height:350px;
+          overflow:hidden;
+          .ip-slide-list {
+            display:none;
+            position: absolute;
+            top:0;
+            left:0;
+            width:2000px;
+            transition: left 0.5s ease-in-out ;
+            &__li{
+              position:relative;
+              float:left;
+              width:350px;
+              height:350px;
+              margin-right: 25px;
+              background-color: #EFEFEF;
+              border-radius: 10px;
+              padding:35px 40px;
+              border:1px solid #BDBDBD;
+              box-sizing: border-box;
+              .ip-header{
+                position:absolute;
+                top:40px; left:35px;
+                width:280px;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+                h3{
+                  font-weight: 400;
+                  text-align: left;
+                  width:145px;
+                  word-break: keep-all;
+                }
+                span{
+                  padding:2px 20px;
+                  background-color: #FB7577;
+                  color:#fff;
+                  border-radius: 50px;
+                }
+              }
+
+              .ip-body{
+                position:absolute;
+                top:100px; left:35px;
+                width:280px;
+                margin-bottom: 1rem;
+                .ip-email{
+                  width:135px;
+                  height:40px;
+                  text-align: left;
+                  font-size:12px;
+                  font-weight: 500;
+                  span{
+                    font-weight: 400;
+                  }
+                }
+              }
+
+              .ip-footer{
+                position: absolute;
+                top:250px; left:35px;
+                width:280px; 
+                text-align: left;
+                word-break: keep-all;
+              }
+            }
+            &.active{
+              display:block;
+            }
+          }
+        }
+      }
+    }
+
+    // 정보/이벤트
+    &.info-event{
+      height:650px;
+      background-color: #F5F7F9;
+      .ie-header{
+        a{
+          width:110px;
+          height:46px;
+          border-radius: 23px;
+          border:2px solid #BEC0C1;
+          box-sizing: border-box;
+          line-height: 42px;
+        }
+      }
+
+      .ie-body{
+        li{
+          width:540px;
+          height:460px;
+
+          p, small{
+            display:block;
+            text-align: left;
+          }
+
+          p{
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size:20px;
+          }
+        }
+      }
+    }
+
+    // 일자리 찾기
+    &.search-job{
+      height:1220px;
+
+      .sj-body{
+        .sj-tab{
+          height:auto;
+          margin-bottom: 50px;
+          li.active{
+            border:2px solid #009BE6;
+            background-color: #03B2E4;
+          }
+        }
+
+        .sj-list{
+          .sj-content{
+            display:none;
+            width:100%;
+            .content-list{
+              width:100%;
+              height:auto;
+              margin-bottom: 50px;
+              .sj-con{
+                width:100%;
+                height:250px;
+                margin-bottom: 30px;
+                border:2px solid #EEEEEE;
+                padding:30px 35px;
+                box-sizing: border-box;
+                border-radius: 0 25px 25px 25px;
+                &:first-child{
+                  background-color: #F5FAFE;
+                }
+                &:last-child{
+                  margin-bottom: 0;
+                }
+
+                &__header{
+                  display:flex;
+                  justify-content: space-between;
+                  height:30px;
+                  margin-bottom: 20px;
+                  .sj-info{
+                    font-size:12px;
+                    li{
+                      float:left;
+                      padding:2px 10px;
+                      box-sizing: border-box;
+                      margin-right: 0.5rem;
+                      height:22px;
+                      border-radius: 4px;
+                      color:#fff;
+                      background: #03B2E7;
+                      &.imp{
+                        background-color: #565656;
+                      }
+                    }
+                  }
+
+                  .sj-like{
+                    text-indent: -9999px;
+                    width:30px;
+                    height:30px;
+                    background-image: url('../img/view_7/favorite_before.png');
+                    @include bg-default;
+                    background-size: 60%;
+                    &.active{
+                      animation:likeit 0.1s both;
+                      // background-image: url('../img/view_7/favorite_after.png');
+                    }
+
+                    @keyframes likeit {
+                      from{background-image: url('../img/view_7/favorite_before.png')}
+                        to{background-image: url('../img/view_7/favorite_after.png')}
+                    }
+                  }
+                }
+
+                &__body{
+                  margin-bottom: 30px;
+                  a{
+                    text-align: left;
+                  }
+                  h3, p{
+                    font-weight: 400;
+                  }
+                  h3{
+                    margin-bottom: 0.5rem;
+                    font-size:20px;
+                  }
+                  p{
+                    font-size:18px;
+                    letter-spacing :-1px;
+                  }
+                }
+
+                &__footer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  font-size:14px;
+                  .sj-con-date{
+                    display: flex;
+                    align-items: center;
+                    .sj-person{
+                      margin-right: 1rem;
+                      span{
+                        color:#03B2E7;
+                      }
+                    }
+                    .sj-date{
+                      padding:4px 20px;
+                      box-sizing: border-box;
+                      border-radius: 4px;
+                      color:#fff;
+                      background-color: #E776AC;
+                    }
+                  }
+                }
+              }
+            }
+
+            .content-link{
+              width:120px;
+              height:42px;
+              line-height: 42px;
+              border-radius: 28px;
+              color:#1BB6E5;
+              border:2px solid #1BB6E5;
+              margin:auto;
+            }
+
+            &.active{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    // 신입/경력 취업자
+    &.new-career{
+      height:600px;
+
+      .nc-header{
+        display:flex;
+        justify-content: space-between;
+        .slide-btn{
+          .prev{
+            background-image: url('../img/common/prev_black.png');
+          }
+          .next{
+            background-image: url('../img/common/next_black.png');
+          }
+        }
+      }
+
+      .nc-slide{
+        position:relative;
+        width:100%;
+        height:400px;
+        overflow:hidden;
+
+        .nc-slide-list{
+          position: absolute;
+          top:0;
+          left:0;
+          width:2000px;
+          transition: left 0.5s ease-in-out ;
+  
+          &__li{
+            float:left;
+            width:350px;
+            height:400px;
+            margin-right: 25px;
+            background-color: #EFF7FE;
+            border-radius: 10px;
+            padding:35px 40px;
+            box-sizing: border-box;
+            .nc-con{
+              &__header{
+                height:30px;
+                margin-bottom: 30px;
+                align-items: flex-start;
+                h3{
+                  width:160px;
+                  text-align: left;
+                  word-break: keep-all;
+                  font-weight: 400;
+                }
+                span{
+                  padding:5px 10px;
+                  font-size: 14px;
+                  color:#fff;
+                  box-sizing: border-box;
+                  background-color: #E674AE;
+                  border-radius: 15px;
+                }
+              }
+
+              &__body{
+                margin-bottom: 20px;
+                img{
+                  margin-right: 1rem;
+                }
+                span{
+                  font-size:14px;
+                  letter-spacing: -1px;
+                  text-align: left;
+                  word-break: keep-all;
+                }
+              }
+
+              &__footer{
+                text-align: left;
+                letter-spacing: -1px;
+                p{
+                  margin-bottom: 0.5rem;
+                }
+                small{
+                  line-height:10px;
+                }
+              }
+            }
+
+            &:nth-child(2){
+              .nc-con-name{
+                background-color: #40C282;
+              }
+            }
+
+            &:nth-child(3){
+              .nc-con-name{
+                background-color: #B774D9;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 특허정보
+    &.company-brand{
+      padding:20px 0;
+      ul{
+        display:flex;
+        align-items: center;
+        li{
+          width:18%;
+          margin-right: 2%;
+          &:before{
+            content:'';
+            display:block;
+            width:auto;
+            height:75px;
+            background-image: url('../img/view_9/brand_1.jpeg');
+            @include bg-default;
+          }
+          &:nth-child(2){
+            &:before{
+              background-image: url('../img/view_9/brand_2.jpeg');
+            }
+          }
+          &:nth-child(3){
+            &:before{
+              background-image: url('../img/view_9/brand_3.png');
+            }
+          }
+          &:nth-child(4){
+            &:before{
+              background-image: url('../img/view_9/brand_4.png');
+            }
+          }
+          &:nth-child(5){
+            &:before{
+              background-image: url('../img/view_9/brand_5.png');
+            }
+          }
+          span{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  #footer{
+    width:100%;
+    height:420px;
+    background-color: #191919;
+    color:#fff;
+    padding-top:60px;
+    box-sizing: border-box;
+    .footer-logo{
+      margin-bottom: 40px;
+    }
+
+    .company-info{
+      li{
+        font-size:14px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+}
+
+
+// responsive
+@media screen and (max-width:1105px){
+  #wrap{
+    width:1105px;
+    .top{
+      .search-box{
+        width:1105px;
+        .search-bar{
+          //  max-width:990px;
+           width:990px;
+        }
+      }
+    }
+  }
+}
